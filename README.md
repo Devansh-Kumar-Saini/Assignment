@@ -1,3 +1,34 @@
+# 🧠 Trader Behavior & Market Sentiment Analysis
+
+## 📊 Project Overview
+This project presents a comprehensive analysis of the intricate relationship between **cryptocurrency trading behavior** and **market sentiment**.  
+Using two key datasets — the **Bitcoin Fear & Greed Index** and **Hyperliquid historical trading data** — the study identifies significant contrarian patterns that can inform smarter and more profitable trading strategies.
+
+---
+
+## 🎯 Objective
+To explore and analyze the relationship between **trader behavior** and **market sentiment** in order to uncover hidden trends, signals, and opportunities that can influence intelligent trading decisions.
+
+---
+
+## 📁 Project Structure
+
+
+
+Assignment/
+│
+├── Data Files/                             # Given Files
+│   ├── fear_greed_index.csv          
+│   └── historical_dates.csv          
+│
+├── solution.ipynb                          # Main Code File
+├── per_account_summary.csv                 # Main analysis script
+├── daily_aggregates_with_sentiment.csv
+│
+├── requirements.tzt
+│
+└── README.md
+
 
 ---
 
