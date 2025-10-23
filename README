@@ -1,12 +1,19 @@
-## Trader Behavior & Market Sentiment Analysis
+# 🧠 Trader Behavior & Market Sentiment Analysis
 
-# 📊 Project Overview
-This comprehensive analysis explores the intricate relationship between cryptocurrency trading behavior and market sentiment using two key datasets: Bitcoin Fear & Greed Index and Hyperliquid historical trading data. The project identifies significant contrarian patterns that can inform smarter trading strategies.
+## 📊 Project Overview
+This project presents a comprehensive analysis of the intricate relationship between **cryptocurrency trading behavior** and **market sentiment**.  
+Using two key datasets — the **Bitcoin Fear & Greed Index** and **Hyperliquid historical trading data** — the study identifies significant contrarian patterns that can inform smarter and more profitable trading strategies.
 
-# 🎯 Objective
-Explore and analyze the relationship between trader behavior and market sentiment to identify hidden trends and signals that could influence smarter trading strategies.
+---
 
-# 📁 Project Structure
+## 🎯 Objective
+To explore and analyze the relationship between **trader behavior** and **market sentiment** in order to uncover hidden trends, signals, and opportunities that can influence intelligent trading decisions.
+
+---
+
+## 📁 Project Structure
+
+
 
 Assignment/
 │
@@ -22,50 +29,76 @@ Assignment/
 │
 └── README.md
 
-# 🔬 Methodology
-Data Processing Pipeline
 
-1. Data Cleaning & Integration
-- Timestamp normalization with day-first format handling
-- BTC trade filtering and symbol standardization
-- Numeric data cleansing (currency symbols, commas)
-- Sentiment label mapping (Fear=0, Greed=1)
+---
 
-2. Feature Engineering
-- Daily aggregation of trading metrics
-- Win rate calculation per day
-- Buy/sell ratio computation
-- Volatility proxies (price std, PnL std)
-- Lagged sentiment variables
+## 🔬 Methodology
 
-4. Statistical Analysis
-- Correlation analysis
-- T-tests for group differences
-- Effect size calculations (Cohen's d)
-- Granger causality tests
-- Logistic regression modeling
+### **1. Data Processing Pipeline**
 
-5. Advanced Analytics
-- Trader segmentation via K-means clustering
-- Event studies around sentiment switches
-- Predictive modeling of PnL direction
+#### **Data Cleaning & Integration**
+- Normalized timestamps with day-first format handling  
+- Filtered for BTC trades and standardized symbols  
+- Cleaned numeric fields (removed currency symbols, commas, etc.)  
+- Mapped sentiment labels (`Fear = 0`, `Greed = 1`)  
 
-# 📊 Key Findings
-- During FEAR periods, trading activity significantly INCREASES with better performance
+#### **Feature Engineering**
+- Daily aggregation of key trading metrics  
+- Win rate and buy/sell ratio computations  
+- Volatility proxies (price and PnL standard deviations)  
+- Created lagged sentiment features for temporal effects  
 
-# 📈 Correlation Analysis
-- All trading metrics show negative correlation with sentiment (Greed=1, Fear=0):
+#### **Statistical Analysis**
+- Correlation analysis between sentiment and market activity  
+- T-tests for group differences  
+- Effect size estimation using Cohen’s *d*  
+- Granger causality tests  
+- Logistic regression modeling  
 
-Unique accounts: -0.433 (strongest)
-Trade count: -0.282
-Total volume: -0.260
-Net realized PnL: -0.216
+#### **Advanced Analytics**
+- Trader segmentation using **K-means clustering**  
+- Event studies around **sentiment regime shifts**  
+- Predictive modeling for **PnL direction forecasting**
 
-# 🤖 Predictive Model Performance
-- Next-day PnL direction prediction: 79% accuracy
-- Features: sentiment, volume, trade count, win rate
-- Strong predictive power for market direction
+---
 
-# 📞 Conclusion
-This analysis successfully demonstrates a significant contrarian relationship between market sentiment and trading behavior. The findings challenge conventional wisdom by showing that fear periods present superior trading opportunities with higher volumes, better returns, and more participant activity.
-The 79% accurate predictive model and statistically significant results provide a robust foundation for developing sentiment-driven trading strategies that can generate alpha in cryptocurrency markets.
+## 📊 Key Findings
+- **Trading activity increases significantly during FEAR periods**, often accompanied by improved performance.  
+- The data suggests **contrarian trading patterns**, where periods of fear present more favorable opportunities.
+
+---
+
+## 📈 Correlation Analysis
+
+| Metric              | Correlation with Sentiment (Greed=1, Fear=0) | Interpretation |
+|---------------------|----------------------------------------------|----------------|
+| Unique Accounts     | **-0.433**                                   | Strong negative correlation |
+| Trade Count         | -0.282                                       | Moderate negative correlation |
+| Total Volume        | -0.260                                       | Moderate negative correlation |
+| Net Realized PnL    | -0.216                                       | Weak to moderate correlation |
+
+> All trading metrics show negative correlation with sentiment — trading activity and performance **increase as market sentiment becomes more fearful**.
+
+---
+
+## 🤖 Predictive Model Performance
+
+- **Model Goal:** Predict next-day PnL direction  
+- **Accuracy:** 79%  
+- **Key Features:** Sentiment, Volume, Trade Count, Win Rate  
+- **Insight:** Strong predictive power for identifying next-day market direction based on sentiment dynamics.
+
+---
+
+## 📞 Conclusion
+This analysis reveals a **contrarian relationship** between market sentiment and trader behavior — **fear periods** often lead to higher activity, better returns, and more engaged market participants.  
+
+The predictive model achieving **79% accuracy** reinforces the potential of **sentiment-driven trading strategies** to generate **alpha** in cryptocurrency markets.  
+The statistically significant results underscore that understanding behavioral finance and sentiment cycles can be a critical edge for traders and analysts alike.
+
+---
+
+## ⚙️ Requirements
+To reproduce the analysis, install dependencies from the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
