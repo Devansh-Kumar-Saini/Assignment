@@ -14,7 +14,7 @@ To explore and analyze the relationship between **trader behavior** and **market
 ## 📁 Project Structure
 
 
-
+```bash
 Assignment/
 │
 ├── Data Files/                             # Given Files
@@ -28,6 +28,7 @@ Assignment/
 ├── requirements.tzt
 │
 └── README.md
+```
 
 
 ---
