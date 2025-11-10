@@ -127,39 +127,10 @@ Top-3 Results
 ### API Configuration
 - **Model**: openai/text-embedding-3-small
 - **Embedding Size**: 1536 dimensions
-- **Cost**: ~$0.00002 per 1K tokens (very cheap)
 - **Batch Processing**: Enabled for efficiency
 
 ---
 
-## 💡 Reflection & Improvements
-
-### Key Improvements Identified
-
-1. **Vector Database Integration**
-   - Integrate Pinecone or Weaviate for production scalability
-   - Handle 1M+ products efficiently
-   - Enable real-time indexing
-
-2. **Hybrid Search**
-   - Combine semantic search with keyword filters
-   - Add price range, category, brand filters
-   - Improve relevance for specific queries
-
-3. **Fine-tuned Embeddings**
-   - Train custom model on fashion domain data
-   - Improve similarity scores for fashion-specific terms
-   - Better understanding of style vocabulary
-
-4. **Caching Strategy**
-   - Cache product embeddings in Redis/database
-   - Reduce API costs by 90%+
-   - Improve latency to <100ms
-
-5. **Multi-modal Search**
-   - Add image embeddings using CLIP
-   - Enable visual similarity search
-   - "Find similar looking items" feature
 
 ### Edge Cases Handled
 
@@ -168,30 +139,6 @@ Top-3 Results
 ✅ **API Failures**: Comprehensive error handling with informative messages  
 ✅ **Empty Results**: Graceful degradation with helpful suggestions  
 ✅ **Rate Limiting**: Error handling for API quota issues  
-
-### Performance Notes
-
-- **Latency**: 2-3 seconds per query (acceptable for demo, needs optimization for production)
-- **Accuracy**: Strong semantic matching (0.5-0.6 scores indicate good matches)
-- **Scalability**: Linear time complexity O(n) - needs vector DB for production
-- **Cost**: ~$0.0001 per query (very cost-effective)
-
-### Why OpenRouter?
-
-✅ **Pay-as-you-go**: No subscription required  
-✅ **Multiple Models**: Access to OpenAI, Anthropic, and more  
-✅ **Reliable**: Better rate limits than free tiers  
-✅ **Cost-effective**: text-embedding-3-small is very cheap  
-✅ **Production-ready**: Stable API with good uptime  
-
-### Production Considerations
-
-1. **Rate Limiting**: Implement request throttling
-2. **Batch Processing**: Process large catalogs efficiently
-3. **A/B Testing**: Test different thresholds and models
-4. **User Feedback**: Implement feedback loop for continuous improvement
-5. **Monitoring**: Track latency, errors, and user satisfaction
-6. **Caching**: Store embeddings to reduce costs and improve speed
 
 ---
 
